@@ -1,0 +1,21 @@
+{
+  "name": "custom-map-component",
+  "version": "1.0.0",
+  "description": "Sample Salesforce Marketing Cloud Content Builder Block",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Advait",
+  "license": "ISC",
+  "dependencies": {
+    "@salesforce-ux/design-system": "^2.5.2",
+    "blocksdk": "^1.0.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-css-loaders": "^1.0.0"
+  }
+}
