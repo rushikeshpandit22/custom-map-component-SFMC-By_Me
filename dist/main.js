@@ -113,9 +113,12 @@ function paintMap() {
 	if (!address) {
 		return;
 	}
-	var url = 'https://maps.googleapis.com/maps/api/staticmap?center=' +
+	//Using Google Map 
+	/*var url = 'https://maps.googleapis.com/maps/api/staticmap?center=' +
 		address.split(' ').join('+') + '&size=' + width + 'x' + height + '&zoom=' + zoom +
-		'&markers=' + address.split(' ').join('+') + '&key=' + mapsKey;
+		'&markers=' + address.split(' ').join('+') + '&key=' + mapsKey;*/
+	//Using MapQuest 
+	 var url = 'https://open.mapquestapi.com/staticmap/v5/map?locations='+address.split(' ').join('+')+'&size='+height+','+width+'@2x&key='+mapsKey;
 	sdk.setContent('<a href="' + link + '"><img src="' + url + '" /></a>');
 	sdk.setData({
 		address: address,
